@@ -1,5 +1,8 @@
-public class Human implements runMethod, jumpMethod, memberFunction {
+package Models;
 
+import Interfaces.MemberFunction;
+
+public class Human implements MemberFunction {
     private String name;
     private int lengthCapacity;
     private int heightCapacity;
@@ -13,15 +16,6 @@ public class Human implements runMethod, jumpMethod, memberFunction {
         this.runSuccess = runSuccess;
     }
 
-    @Override
-    public void run() {
-        System.out.println("Human is running");
-    }
-
-    @Override
-    public void jump() {
-        System.out.println("Human is jumping");
-    }
     @Override
     public String getName() {return name;}
     @Override
@@ -41,4 +35,3 @@ public class Human implements runMethod, jumpMethod, memberFunction {
         this.runSuccess = runSuccess;
     }
 }
-

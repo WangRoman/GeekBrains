@@ -1,10 +1,15 @@
-public class Treadmill implements instrumentMethod {
+package Models;
+
+
+import Interfaces.InstrumentMethod;
+
+public class Treadmill implements InstrumentMethod {
     private int length;
     private int height;
 
     public Treadmill(int length, int height) {
         this.length = length;
-        this.height = 0;
+        this.height = height;
     }
     @Override
     public int getLength() {
@@ -13,6 +18,6 @@ public class Treadmill implements instrumentMethod {
 
     @Override
     public int getHeight() {
-        return 0;
+        return height;
     }
 }
